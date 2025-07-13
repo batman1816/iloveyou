@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Message Slides</title>
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  .slide {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background: linear-gradient(#F4C2C2);
+  }
+  .slide.active {
+    display: flex;
+  }
+  .text {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .options button {
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: ##F4C2C2;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .options button:hover {
+    background-color: #F4C2C2
+  }
+  .non-functional {
+    pointer-events: none;
+    opacity: 0.6;
+  }
+</style>
+</head>
+<body>
+
+<div id="slide1" class="slide active">
+  <div class="text">ik i forgot to reply to your story again.....</div>
+  <div class="options">
+    <button onclick="changeSlide(2)">whats new?</button>
+    <button onclick="changeSlide(2)">yea because you literally dont love me anymore</button>
+  </div>
+</div>
+
+<!-- Additional slides based on your request -->
+<div id="slide2" class="slide">
+  <div class="text">and i forgot to post you on the 13th</div>
+  <div class="options">
+    <button onclick="changeSlide(3)">i literally dont care</button>
+    <button onclick="changeSlide(3)">yea like i said its because you dont love me</button>
+  </div>
+</div>
+
+<div id="slide3" class="slide">
+  <div class="text">i do love you i love you more thn anything else in this entire world</div>
+  <div class="options">
+    <button onclick="changeSlide(4)">okay lol</button>
+    <button onclick="changeSlide(4)">right</button>
+  </div>
+</div>
+
+<div id="slide4" class="slide">
+  <div class="text">i do shut up</div>
+  <div class="options">
+    <button onclick="changeSlide(5)">just get to the point amr shomai nai</button>
+    <button onclick="changeSlide(5)">yea yea i am i love you</button>
+  </div>
+</div>
+
+<div id="slide5" class="slide">
+  <div class="text">asking your BOYFRIEND for something doesnt make you lose self respect</div>
+  <div class="options">
+    <button onclick="changeSlide(6)">will you just get to the point?</button>
+  </div>
+</div>
+
+<div id="slide6" class="slide">
+  <div class="text">i love you i am so sorry amr jaan i have been messing up and i love you more thn anything else in this entire world you are the best thing that has happened to me and you looked so hot in the story ik i should have told you by replying well i didnt thats why we are here anyways ik i messed up AGAIN but i am so sorry amr jaan i love you more thn anything else in this entire world you are the bessstttt please forgive me?</div>
+  <div class="options">
+    <button onclick="changeSlide(7)">yea no</button>
+    <button onclick="changeSlide(7)">NO WAYYY</button>
+  </div>
+</div>
+
+<div id="slide7" class="slide">
+  <div class="text">pleasee 🥹🥹🥹??</div>
+  <div class="options">
+    <button onclick="changeSlide(8)">no</button>
+    <button onclick="changeSlide(8)">NOOO</button>
+  </div>
+</div>
+
+<div id="slide8" class="slide">
+  <div class="text">AMR JAAN PLEASEEEEE i love you and i am so so so soooooo sorry jaan</div>
+  <div class="options">
+    <button id="dontCareButton">i dont care</button>
+    <button onclick="changeSlide(9)">accha thikase</button>
+  </div>
+</div>
+
+<div id="slide9" class="slide">
+  <div class="text">The end.</div>
+</div>
+
+<script>
+  function changeSlide(slideNumber) {
+    var slides = document.getElementsByClassName('slide');
+    for (var i = 0; i < slides.length; i++) {
+      slides[i].classList.remove('active');
+    }
+    document.getElementById('slide' + slideNumber).classList.add('active');
+  }
+
+  // Function to move the "i dont care" button
+  document.getElementById('dontCareButton').addEventListener('click', function() {
+    this.style.position = 'absolute';
+    this.style.top = Math.random() * 80 + 'vh';
+    this.style.left = Math.random() * 80 + 'vw';
+  });
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Message Slides</title>
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  .slide {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+  }
+  .slide.active {
+    display: flex;
+  }
+  .text {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .options button {
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #333;<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Message Slides</title>
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  .slide {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background: linear-gradient(#F4C2C2);
+  }
+  .slide.active {
+    display: flex;
+  }
+  .text {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .options button {
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: ##F4C2C2;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .options button:hover {
+    background-color: #F4C2C2
+  }
+  .non-functional {
+    pointer-events: none;
+    opacity: 0.6;
+  }
+</style>
+</head>
+<body>
+
+<div id="slide1" class="slide active">
+  <div class="text">ik i forgot to reply to your story again.....</div>
+  <div class="options">
+    <button onclick="changeSlide(2)">whats new?</button>
+    <button onclick="changeSlide(2)">yea because you literally dont love me anymore</button>
+  </div>
+</div>
+
+<!-- Additional slides based on your request -->
+<div id="slide2" class="slide">
+  <div class="text">and i forgot to post you on the 13th</div>
+  <div class="options">
+    <button onclick="changeSlide(3)">i literally dont care</button>
+    <button onclick="changeSlide(3)">yea like i said its because you dont love me</button>
+  </div>
+</div>
+
+<div id="slide3" class="slide">
+  <div class="text">i do love you i love you more thn anything else in this entire world</div>
+  <div class="options">
+    <button onclick="changeSlide(4)">okay lol</button>
+    <button onclick="changeSlide(4)">right</button>
+  </div>
+</div>
+
+<div id="slide4" class="slide">
+  <div class="text">i do shut up</div>
+  <div class="options">
+    <button onclick="changeSlide(5)">just get to the point amr shomai nai</button>
+    <button onclick="changeSlide(5)">yea yea i am i love you</button>
+  </div>
+</div>
+
+<div id="slide5" class="slide">
+  <div class="text">asking your BOYFRIEND for something doesnt make you lose self respect</div>
+  <div class="options">
+    <button onclick="changeSlide(6)">will you just get to the point?</button>
+  </div>
+</div>
+
+<div id="slide6" class="slide">
+  <div class="text">i love you i am so sorry amr jaan i have been messing up and i love you more thn anything else in this entire world you are the best thing that has happened to me and you looked so hot in the story ik i should have told you by replying well i didnt thats why we are here anyways ik i messed up AGAIN but i am so sorry amr jaan i love you more thn anything else in this entire world you are the bessstttt please forgive me?</div>
+  <div class="options">
+    <button onclick="changeSlide(7)">yea no</button>
+    <button onclick="changeSlide(7)">NO WAYYY</button>
+  </div>
+</div>
+
+<div id="slide7" class="slide">
+  <div class="text">pleasee 🥹🥹🥹??</div>
+  <div class="options">
+    <button onclick="changeSlide(8)">no</button>
+    <button onclick="changeSlide(8)">NOOO</button>
+  </div>
+</div>
+
+<div id="slide8" class="slide">
+  <div class="text">AMR JAAN PLEASEEEEE i love you and i am so so so soooooo sorry jaan</div>
+  <div class="options">
+    <button id="dontCareButton">i dont care</button>
+    <button onclick="changeSlide(9)">accha thikase</button>
+  </div>
+</div>
+
+<div id="slide9" class="slide">
+  <div class="text">The end.</div>
+</div>
+
+<script>
+  function changeSlide(slideNumber) {
+    var slides = document.getElementsByClassName('slide');
+    for (var i = 0; i < slides.length; i++) {
+      slides[i].classList.remove('active');
+    }
+    document.getElementById('slide' + slideNumber).classList.add('active');
+  }
+
+  // Function to move the "i dont care" button
+  document.getElementById('dontCareButton').addEventListener('click', function() {
+    this.style.position = 'absolute';
+    this.style.top = Math.random() * 80 + 'vh';
+    this.style.left = Math.random() * 80 + 'vw';
+  });
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Message Slides</title>
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  .slide {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+  }
+  .slide.active {
+    display: flex;
+  }
+  .text {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .options button {
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .options button:hover {
+    background-color: #f1f1f1;
+  }
+</style>
+</head>
+<body>
+
+<!-- Existing slides omitted for brevity -->
+
+<div id="slide8" class="slide">
+  <div class="text">AMR JAAN PLEASEEEEE i love you and i am so so so soooooo sorry jaan</div>
+  <div class="options">
+    <button onclick="changeSlide(9)">i dont care</button>
+    <button onclick="changeSlide(9)">accha thikase</button>
+  </div>
+</div>
+
+<div id="slide9" class="slide">
+  <div class="text">The end.</div>
+</div>
+
+<script>
+  function changeSlide(slideNumber) {
+    var slides = document.getElementsByClassName('slide');
+    for (var i = 0; i < slides.length; i++) {
+      slides[i].classList.remove('active');
+    }
+    document.getElementById('slide' + slideNumber).classList.add('active');
+  }
+</script>
+
+</body>
+</html>
+
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .options button:hover {
+    background-color: #f1f1f1;
+  }
+</style>
+</head>
+<body>
+
+<!-- Existing slides omitted for brevity -->
+
+<div id="slide8" class="slide">
+  <div class="text">AMR JAAN PLEASEEEEE i love you and i am so so so soooooo sorry jaan</div>
+  <div class="options">
+    <button onclick="changeSlide(9)">i dont care</button>
+    <button onclick="changeSlide(9)">accha thikase</button>
+  </div>
+</div>
+
+<div id="slide9" class="slide">
+  <div class="text">The end.</div>
+</div>
+
+<script>
+  function changeSlide(slideNumber) {
+    var slides = document.getElementsByClassName('slide');
+    for (var i = 0; i < slides.length; i++) {
+      slides[i].classList.remove('active');
+    }
+    document.getElementById('slide' + slideNumber).classList.add('active');
+  }
+</script>
+
+</body>
+</html>
